@@ -1,0 +1,223 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-in;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #A45EE5, #C891FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideDown 0.5s ease-out;
+}
+
+.uploader {
+  border: 2px dashed #888;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.uploader:hover {
+  background-color: rgba(164, 94, 229, 0.05);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(164, 94, 229, 0.15);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  animation: slideUp 0.5s ease-out;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s ease;
+}
+
+tr:hover td {
+  background-color: rgba(164, 94, 229, 0.05);
+}
+
+th {
+  background-color: rgba(164, 94, 229, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  color: #A45EE5;
+  font-weight: 600;
+}
+
+.chart-wrapper {
+  margin-top: 2rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  animation: slideUp 0.5s ease-out;
+}
+
+.chart-wrapper:hover {
+  transform: scale(1.01);
+}
+
+/* Base button styles */
+.button, .guide-button, .forecast-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Primary button */
+.button {
+  background: #A45EE5;
+  color: white;
+  box-shadow: 0 2px 4px rgba(164, 94, 229, 0.2);
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background: #8A4BC9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(164, 94, 229, 0.3);
+}
+
+/* Secondary button */
+.guide-button {
+  margin-left: 2rem;
+  white-space: nowrap;
+  background: rgba(164, 94, 229, 0.1);
+  color: #A45EE5;
+  box-shadow: 0 2px 4px rgba(164, 94, 229, 0.1);
+}
+
+.guide-button:hover {
+  background: rgba(164, 94, 229, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(164, 94, 229, 0.2);
+}
+
+/* Disabled state for all buttons */
+.button:disabled, .guide-button:disabled {
+  background: #e0e0e0;
+  color: #888;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Active state for all buttons */
+.button:active, .guide-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(164, 94, 229, 0.2);
+}
+
+/* Focus state for accessibility */
+.button:focus, .guide-button:focus {
+  outline: 2px solid rgba(164, 94, 229, 0.5);
+  outline-offset: 2px;
+}
+
+/* Remove focus outline for mouse users */
+.button:focus:not(:focus-visible), 
+.guide-button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Modern Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Modern Media Query */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  flex: 1;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin: 0;
+  flex: 1;
+}
+
+.divider {
+  margin: 2rem 0;
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(164, 94, 229, 0.5),
+    transparent
+  );
+}
