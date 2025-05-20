@@ -1,12 +1,24 @@
-# React + Vite
+Vyayadarshi: Personal Expense Visualization – A Fintech Mini Project(DATA visulization)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Vyayadarshi - Expense Analyzer
+A modern web application for analyzing and visualizing personal expenses through interactive charts and detailed financial insights.
 
-Currently, two official plugins are available:
+--Features
+Expense Visualization
+Category-wise expense breakdown using pie charts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Daily trend analysis with line graphs
 
-## Expanding the ESLint configuration
+Top spending categories displayed with bar charts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Summary cards displaying key metrics
+
+--Core Capabilities
+CSV file upload for user expense data
+
+Expense forecasting using linear regression
+
+Fully responsive design
+
+--SUMMARY 
+Vyayadarshi - Expense Analyzer is a modern web app built with React and Vite to help users analyze and visualize their personal spending. It supports CSV uploads, generates interactive charts (pie, line, bar), and provides forecasting using linear regression. With responsive design and clean UI, it offers insights like category-wise breakdowns, daily trends, and top expenses—ideal for smart financial tracking and decision-making.
