@@ -21,4 +21,4 @@ Expense forecasting using linear regression
 Fully responsive design
 
 --SUMMARY 
-Vyayadarshi - Expense Analyzer is a modern web app built with React and Vite to help users analyze and visualize their personal spending. It supports CSV uploads, generates interactive charts (pie, line, bar), and provides forecasting using linear regression. With responsive design and clean UI, it offers insights like category-wise breakdowns, daily trends, and top expenses—ideal for smart financial tracking and decision-making.
+Vyayadarshi - Expense Analyzer is a modern web app built with React and Vite to help users analyze and visualize their personal spending. It supports CSV uploads, generates interactive charts (pie, line, bar), and provides forecasting using linear regression. With responsive design and clean UI, it offers insights like category-wise breakdowns, daily trends, and top expenses ideal for smart financial tracking and decision-making.
